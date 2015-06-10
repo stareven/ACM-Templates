@@ -105,7 +105,7 @@ void SAAlgoDA::run(const int *r, int *sa, int *rank, int length, int sigma)
 
 void SAAlgoDC3::run(const int *r, int *sa, int *rank, int length, int sigma)
 {
-    int *buf = new int[length * 12];
+    int *buf = new int[length * 10];
     _cnt = buf;
     _r = _cnt + length;
     _sa = _r + length * 3;
