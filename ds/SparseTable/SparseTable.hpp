@@ -1,5 +1,5 @@
-#ifndef _DS_SPARSE_TABLE_HPP_
-#define _DS_SPARSE_TABLE_HPP_
+#ifndef _DS_SPARSE_TABLE_SPARSE_TABLE_HPP_
+#define _DS_SPARSE_TABLE_SPARSE_TABLE_HPP_
 
 #include <stdlib.h>
 #include <vector>
@@ -29,4 +29,4 @@ private:
 
 #include "SparseTable.ipp"
 
-#endif // _DS_SPARSE_TABLE_HPP_
+#endif // _DS_SPARSE_TABLE_SPARSE_TABLE_HPP_

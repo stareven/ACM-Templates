@@ -1,5 +1,5 @@
-#ifndef _DS_FENWICK_TREE_H_
-#define _DS_FENWICK_TREE_H_
+#ifndef _DS_FENWICK_TREE_FENWICK_TREE_H_
+#define _DS_FENWICK_TREE_FENWICK_TREE_H_
 
 #include <vector>
 #include <stdlib.h>
@@ -27,4 +27,4 @@ private:
 
 }
 
-#endif // _DS_FENWICK_TREE_H_
+#endif // _DS_FENWICK_TREE_FENWICK_TREE_H_

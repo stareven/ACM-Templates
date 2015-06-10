@@ -1,5 +1,5 @@
-#ifndef _DS_SEG_TREE_IPP_
-#define _DS_SEG_TREE_IPP_
+#ifndef _DS_SEG_TREE_SEG_TREE_IPP_
+#define _DS_SEG_TREE_SEG_TREE_IPP_
 
 #include "SegTree.hpp"
 #include <assert.h>
@@ -77,4 +77,4 @@ T SegTree<T, TStrategy>::doQuery(int v, int left, int right)
 
 }
 
-#endif // _DS_SEG_TREE_IPP_
+#endif // _DS_SEG_TREE_SEG_TREE_IPP_

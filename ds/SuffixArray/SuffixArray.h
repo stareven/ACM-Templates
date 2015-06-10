@@ -1,5 +1,5 @@
-#ifndef _DS_SUFFIX_ARRAY_H_
-#define _DS_SUFFIX_ARRAY_H_
+#ifndef _DS_SUFFIX_ARRAY_SUFFIX_ARRAY_H_
+#define _DS_SUFFIX_ARRAY_SUFFIX_ARRAY_H_
 
 #include <vector>
 #include <string>
@@ -81,4 +81,4 @@ private:
 
 }
 
-#endif // _DS_SUFFIX_ARRAY_H_
+#endif // _DS_SUFFIX_ARRAY_SUFFIX_ARRAY_H_

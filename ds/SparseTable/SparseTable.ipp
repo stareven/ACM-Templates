@@ -1,5 +1,5 @@
-#ifndef _DS_SPARSE_TABLE_IPP_
-#define _DS_SPARSE_TABLE_IPP_
+#ifndef _DS_SPARSE_TABLE_SPARSE_TABLE_IPP_
+#define _DS_SPARSE_TABLE_SPARSE_TABLE_IPP_
 
 #include "SparseTable.hpp"
 #include <assert.h>
@@ -45,4 +45,4 @@ void SparseTable<T, TCompare>::initialize(const std::vector<T> &a)
 
 }
 
-#endif // _DS_SPARSE_TABLE_IPP_
+#endif // _DS_SPARSE_TABLE_SPARSE_TABLE_IPP_

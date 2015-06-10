@@ -1,5 +1,5 @@
-#ifndef _DS_SEG_TREE_HPP_
-#define _DS_SEG_TREE_HPP_
+#ifndef _DS_SEG_TREE_SEG_TREE_HPP_
+#define _DS_SEG_TREE_SEG_TREE_HPP_
 
 #include <vector>
 
@@ -30,4 +30,4 @@ private:
 
 #include "SegTree.ipp"
 
-#endif // _DS_SEG_TREE_HPP_
+#endif // _DS_SEG_TREE_SEG_TREE_HPP_
