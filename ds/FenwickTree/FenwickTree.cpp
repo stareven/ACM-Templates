@@ -42,5 +42,4 @@ size_t FenwickTree::bsearch(int x)
     return cnt + 1;
 }
 
-
 }

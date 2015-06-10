@@ -66,7 +66,7 @@ void SuffixArray::calcHeight()
 
 void SAAlgo::sort(const int *r, const int *s, int *t, int length, int *cnt, int sigma)
 {
-    bzero(cnt, sizeof(int) * sigma);
+    memset(cnt, 0, sizeof(int) * sigma);
     for (int i = 0; i < length; i++) cnt[r[s[i]]]++;
     for (int j = 1; j < sigma; j++) cnt[j] += cnt[j - 1];
     for (int i = length - 1; i >= 0; i--) t[--cnt[r[s[i]]]] = s[i];
