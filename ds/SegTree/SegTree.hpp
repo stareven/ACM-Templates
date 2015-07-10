@@ -5,24 +5,45 @@
 
 namespace ds {
 
-template<typename T, typename TStrategy>
+template<typename T>
 class SegTree
 {
-    struct Node;
 public:
-    explicit SegTree(int left, int right, const T &t=T());
+    struct Node {
+        int left, right;
+        T t;
+    };
+    class Policy
+    {
+    protected:
+        typedef Node SegNode;
+    public:
+        virtual ~Policy() {}
+    public:
+        virtual void initialize(SegNode &v) = 0;
+        virtual void update(SegNode &orig, const T &t) = 0;
+        virtual void push(SegNode &v, SegNode &lc, SegNode &rc) = 0;
+        virtual void pull(SegNode &v, SegNode &lc, SegNode &rc) = 0;
+        virtual T merge(const T &lc, const T &rc) = 0;
+
+    };
+
+public:
+    explicit SegTree(int left, int right, Policy *policy);
+    ~SegTree();
 
 public:
     void update(int left, int right, const T& t);
     T query(int left, int right);
 
 private:
-    void build(int v, int left, int right, const T &t);
+    void build(int v, int left, int right);
     void doUpdate(int v, int left, int right, const T &t);
     T doQuery(int v, int left, int right);
 
 private:
     std::vector<Node> _nodes;
+    Policy *_policy;
 
 };
 
